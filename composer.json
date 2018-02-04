@@ -1,0 +1,26 @@
+{
+    "name": "commer/module-customordernumber",
+    "description": "N/A",
+    "require": {
+        "augustash/module-sales-sequence-customordernumber":"~1.0.2"
+    },
+    "type": "magento2-module",
+    "version": "1.0",
+    "license": [
+        "proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Commer\\CustomOrderNumber\\": ""
+        }
+    },
+    "repositories": {
+        "augustash-customordernumber": {
+            "type": "vcs",
+            "url": "https://github.com/augustash/magento2-module-sales-sequence-customordernumber.git"
+        }
+    }
+}

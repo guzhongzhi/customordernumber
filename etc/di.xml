@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    
+    <preference for="Augustash\CustomOrderNumber\Model\CustomSequence" type="Commer\CustomOrderNumber\Model\CustomSequence" />
+    
+    <preference for="Augustash\CustomOrderNumber\Controller\Adminhtml\System\Config\Apply\Order" type="Commer\CustomOrderNumber\Controller\Adminhtml\System\Config\Apply\Order" /> 
+    <preference for="Augustash\CustomOrderNumber\Controller\Adminhtml\System\Config\Apply\Invoice" type="Commer\CustomOrderNumber\Controller\Adminhtml\System\Config\Apply\Invoice" /> 
+    <preference for="Augustash\CustomOrderNumber\Controller\Adminhtml\System\Config\Apply\Shipment" type="Commer\CustomOrderNumber\Controller\Adminhtml\System\Config\Apply\Shipment" /> 
+    <preference for="Augustash\CustomOrderNumber\Controller\Adminhtml\System\Config\Apply\Creditmemo" type="Commer\CustomOrderNumber\Controller\Adminhtml\System\Config\Apply\Creditmemo" /> 
+    
+    <preference for="Augustash\CustomOrderNumber\Helper\Data" type="Commer\CustomOrderNumber\Helper\Data" /> 
+    
+    <preference for="Magento\Quote\Model\ResourceModel\Quote" type="Commer\CustomOrderNumber\Model\QuoteResource" />
+    
+    <preference for="Magento\Sales\Model\ResourceModel\Order\Invoice" type="Commer\CustomOrderNumber\Model\InvoiceResource" />
+    <preference for="Magento\Sales\Model\ResourceModel\Order\Shipment" type="Commer\CustomOrderNumber\Model\ShipmentResource" />
+    <preference for="Magento\Sales\Model\ResourceModel\Order\Creditmemo" type="Commer\CustomOrderNumber\Model\CreditmemoResource" />
+    
+    
+    
+</config>
